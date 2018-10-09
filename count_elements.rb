@@ -1,5 +1,5 @@
 def count_elements(array)
-  hash = {}
+  new_hash = {}
   array.each do |element|
     if hash.has_key?(element) == false
       hash[element][:count] = 1
@@ -7,5 +7,5 @@ def count_elements(array)
       hash[element][:count] += 1
     end
   end
-  return hash
+  return new_hash
 end
