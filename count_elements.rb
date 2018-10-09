@@ -5,6 +5,7 @@ def count_elements(array)
   array.each do |element|
     if new_hash.has_key?(element) == false
       binding.pry
+      new_hash[element]
       new_hash[element]["count"] = 1
     else
       new_hash[element]["count"] += 1
