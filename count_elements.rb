@@ -4,9 +4,9 @@ def count_elements(array)
   new_hash = {}
   array.each do |element|
     if new_hash.has_key?(element) == false
-      hash[element]["count"] = 1
+      new_hash[element]["count"] = 1
     else
-      hash[element]["count"] += 1
+      new_hash[element]["count"] += 1
     end
   end
   return new_hash
